@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\rexon\\source\\repos\\Mishi-App para web\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5C0B24CA-F911-F05E-DAAA-2A0DF72F9B47}|Mishi-App para web\\Mishi-App para web.csproj|c:\\users\\rexon\\source\\repos\\mishi-app para web\\mishi-app para web\\wwwroot\\acercade.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C0B24CA-F911-F05E-DAAA-2A0DF72F9B47}|Mishi-App para web\\Mishi-App para web.csproj|solutionrelative:mishi-app para web\\wwwroot\\acercade.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C0B24CA-F911-F05E-DAAA-2A0DF72F9B47}|Mishi-App para web\\Mishi-App para web.csproj|c:\\users\\rexon\\source\\repos\\mishi-app para web\\mishi-app para web\\wwwroot\\adopcion.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C0B24CA-F911-F05E-DAAA-2A0DF72F9B47}|Mishi-App para web\\Mishi-App para web.csproj|solutionrelative:mishi-app para web\\wwwroot\\adopcion.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C0B24CA-F911-F05E-DAAA-2A0DF72F9B47}|Mishi-App para web\\Mishi-App para web.csproj|c:\\users\\rexon\\source\\repos\\mishi-app para web\\mishi-app para web\\wwwroot\\adopcion.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{5C0B24CA-F911-F05E-DAAA-2A0DF72F9B47}|Mishi-App para web\\Mishi-App para web.csproj|solutionrelative:mishi-app para web\\wwwroot\\adopcion.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C0B24CA-F911-F05E-DAAA-2A0DF72F9B47}|Mishi-App para web\\Mishi-App para web.csproj|c:\\users\\rexon\\source\\repos\\mishi-app para web\\mishi-app para web\\controllers\\adopcionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C0B24CA-F911-F05E-DAAA-2A0DF72F9B47}|Mishi-App para web\\Mishi-App para web.csproj|solutionrelative:mishi-app para web\\controllers\\adopcionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C0B24CA-F911-F05E-DAAA-2A0DF72F9B47}|Mishi-App para web\\Mishi-App para web.csproj|c:\\users\\rexon\\source\\repos\\mishi-app para web\\mishi-app para web\\wwwroot\\perfil.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{5C0B24CA-F911-F05E-DAAA-2A0DF72F9B47}|Mishi-App para web\\Mishi-App para web.csproj|solutionrelative:mishi-app para web\\wwwroot\\perfil.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C0B24CA-F911-F05E-DAAA-2A0DF72F9B47}|Mishi-App para web\\Mishi-App para web.csproj|c:\\users\\rexon\\source\\repos\\mishi-app para web\\mishi-app para web\\wwwroot\\perfil.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C0B24CA-F911-F05E-DAAA-2A0DF72F9B47}|Mishi-App para web\\Mishi-App para web.csproj|solutionrelative:mishi-app para web\\wwwroot\\perfil.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C0B24CA-F911-F05E-DAAA-2A0DF72F9B47}|Mishi-App para web\\Mishi-App para web.csproj|c:\\users\\rexon\\source\\repos\\mishi-app para web\\mishi-app para web\\models\\adopcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C0B24CA-F911-F05E-DAAA-2A0DF72F9B47}|Mishi-App para web\\Mishi-App para web.csproj|solutionrelative:mishi-app para web\\models\\adopcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C0B24CA-F911-F05E-DAAA-2A0DF72F9B47}|Mishi-App para web\\Mishi-App para web.csproj|c:\\users\\rexon\\source\\repos\\mishi-app para web\\mishi-app para web\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C0B24CA-F911-F05E-DAAA-2A0DF72F9B47}|Mishi-App para web\\Mishi-App para web.csproj|solutionrelative:mishi-app para web\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C0B24CA-F911-F05E-DAAA-2A0DF72F9B47}|Mishi-App para web\\Mishi-App para web.csproj|c:\\users\\rexon\\source\\repos\\mishi-app para web\\mishi-app para web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5C0B24CA-F911-F05E-DAAA-2A0DF72F9B47}|Mishi-App para web\\Mishi-App para web.csproj|solutionrelative:mishi-app para web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Acercade.html",
+              "DocumentMoniker": "C:\\Users\\rexon\\source\\repos\\Mishi-App para web\\Mishi-App para web\\wwwroot\\Acercade.html",
+              "RelativeDocumentMoniker": "Mishi-App para web\\wwwroot\\Acercade.html",
+              "ToolTip": "C:\\Users\\rexon\\source\\repos\\Mishi-App para web\\Mishi-App para web\\wwwroot\\Acercade.html",
+              "RelativeToolTip": "Mishi-App para web\\wwwroot\\Acercade.html",
+              "ViewState": "AgIAALwCAAAAAAAAAAAowMgCAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-10-25T23:37:49.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Adopcion.cs",
+              "DocumentMoniker": "C:\\Users\\rexon\\source\\repos\\Mishi-App para web\\Mishi-App para web\\Models\\Adopcion.cs",
+              "RelativeDocumentMoniker": "Mishi-App para web\\Models\\Adopcion.cs",
+              "ToolTip": "C:\\Users\\rexon\\source\\repos\\Mishi-App para web\\Mishi-App para web\\Models\\Adopcion.cs",
+              "RelativeToolTip": "Mishi-App para web\\Models\\Adopcion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-25T22:29:59.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\rexon\\source\\repos\\Mishi-App para web\\Mishi-App para web\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Mishi-App para web\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\rexon\\source\\repos\\Mishi-App para web\\Mishi-App para web\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Mishi-App para web\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-25T22:14:34.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\rexon\\source\\repos\\Mishi-App para web\\Mishi-App para web\\appsettings.json",
+              "RelativeDocumentMoniker": "Mishi-App para web\\appsettings.json",
+              "ToolTip": "C:\\Users\\rexon\\source\\repos\\Mishi-App para web\\Mishi-App para web\\appsettings.json",
+              "RelativeToolTip": "Mishi-App para web\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-10-25T22:14:28.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "perfil.html",
+              "DocumentMoniker": "C:\\Users\\rexon\\source\\repos\\Mishi-App para web\\Mishi-App para web\\wwwroot\\perfil.html",
+              "RelativeDocumentMoniker": "Mishi-App para web\\wwwroot\\perfil.html",
+              "ToolTip": "C:\\Users\\rexon\\source\\repos\\Mishi-App para web\\Mishi-App para web\\wwwroot\\perfil.html",
+              "RelativeToolTip": "Mishi-App para web\\wwwroot\\perfil.html",
+              "ViewState": "AgIAACsDAAAAAAAAAAAAAP4CAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-10-25T22:08:30.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "perfil.js",
+              "DocumentMoniker": "C:\\Users\\rexon\\source\\repos\\Mishi-App para web\\Mishi-App para web\\wwwroot\\perfil.js",
+              "RelativeDocumentMoniker": "Mishi-App para web\\wwwroot\\perfil.js",
+              "ToolTip": "C:\\Users\\rexon\\source\\repos\\Mishi-App para web\\Mishi-App para web\\wwwroot\\perfil.js",
+              "RelativeToolTip": "Mishi-App para web\\wwwroot\\perfil.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-10-25T22:08:29.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "adopcion.html",
+              "DocumentMoniker": "C:\\Users\\rexon\\source\\repos\\Mishi-App para web\\Mishi-App para web\\wwwroot\\adopcion.html",
+              "RelativeDocumentMoniker": "Mishi-App para web\\wwwroot\\adopcion.html",
+              "ToolTip": "C:\\Users\\rexon\\source\\repos\\Mishi-App para web\\Mishi-App para web\\wwwroot\\adopcion.html",
+              "RelativeToolTip": "Mishi-App para web\\wwwroot\\adopcion.html",
+              "ViewState": "AgIAALwDAAAAAAAAAAAswMMDAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-10-25T22:08:27.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "adopcion.js",
+              "DocumentMoniker": "C:\\Users\\rexon\\source\\repos\\Mishi-App para web\\Mishi-App para web\\wwwroot\\adopcion.js",
+              "RelativeDocumentMoniker": "Mishi-App para web\\wwwroot\\adopcion.js",
+              "ToolTip": "C:\\Users\\rexon\\source\\repos\\Mishi-App para web\\Mishi-App para web\\wwwroot\\adopcion.js",
+              "RelativeToolTip": "Mishi-App para web\\wwwroot\\adopcion.js",
+              "ViewState": "AgIAALgAAAAAAAAAAAAQwOYAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-10-25T22:08:25.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdopcionesController.cs",
+              "DocumentMoniker": "C:\\Users\\rexon\\source\\repos\\Mishi-App para web\\Mishi-App para web\\Controllers\\AdopcionesController.cs",
+              "RelativeDocumentMoniker": "Mishi-App para web\\Controllers\\AdopcionesController.cs",
+              "ToolTip": "C:\\Users\\rexon\\source\\repos\\Mishi-App para web\\Mishi-App para web\\Controllers\\AdopcionesController.cs",
+              "RelativeToolTip": "Mishi-App para web\\Controllers\\AdopcionesController.cs",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAswLoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-25T21:16:05.153Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

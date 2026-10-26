@@ -1,0 +1,371 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Gatito - Adopta Amor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-gradient: linear-gradient(135deg, #7b2cbf 0%, #3c096c 50%, #10002b 100%);
+            --card-bg: rgba(255, 255, 255, 0.12);
+            --card-border: rgba(255, 255, 255, 0.22);
+            --accent-pink: #ff4d8d;
+            --accent-pink-hover: #ff75a0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: var(--bg-gradient);
+            background-attachment: fixed;
+            color: #fff;
+            padding-top: 95px;
+        }
+
+            body::before {
+                content: '';
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image: radial-gradient(rgba(255, 255, 255, 0.08) 2px, transparent 2px);
+                background-size: 32px 32px;
+                pointer-events: none;
+                z-index: 0;
+            }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 75px;
+            background: rgba(16, 0, 43, 0.85);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid var(--card-border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 40px;
+            z-index: 1000;
+        }
+
+        .brand-logo {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+            .brand-logo i {
+                color: var(--accent-pink);
+            }
+
+        .nav-menu {
+            display: flex;
+            list-style: none !important;
+            list-style-type: none !important;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-item a {
+            color: rgba(255,255,255,0.85);
+            text-decoration: none;
+            font-size: 0.9rem;
+            padding: 8px 14px;
+            border-radius: 20px;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+            .nav-item a:hover, .nav-item a.active {
+                color: #fff;
+                background: rgba(255,255,255,0.18);
+            }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none !important;
+            position: absolute;
+            background: rgba(16, 0, 43, 0.95);
+            backdrop-filter: blur(15px);
+            min-width: 180px;
+            box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            z-index: 1000;
+            list-style: none !important;
+            list-style-type: none !important;
+            padding: 8px 0 !important;
+            margin: 0 !important;
+            top: 100%;
+            left: 0;
+        }
+
+            .dropdown-content li {
+                list-style: none !important;
+                list-style-type: none !important;
+            }
+
+                .dropdown-content li a {
+                    color: rgba(255, 255, 255, 0.85);
+                    padding: 10px 16px;
+                    text-decoration: none;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    font-size: 0.85rem;
+                    transition: 0.3s;
+                    border-radius: 10px;
+                    margin: 0 6px;
+                }
+
+                    .dropdown-content li a:hover {
+                        background: rgba(255, 255, 255, 0.18);
+                        color: #fff;
+                    }
+
+        .dropdown:hover > .dropdown-content {
+            display: block !important;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px 20px 60px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .detail-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(18px);
+            border: 1px solid var(--card-border);
+            border-radius: 28px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 35px;
+            align-items: center;
+        }
+
+        .cat-image-box {
+            width: 100%;
+            height: 320px;
+            border-radius: 20px;
+            overflow: hidden;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid var(--card-border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+            .cat-image-box img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+        .cat-info-box h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 5px;
+        }
+
+        .cat-badge {
+            display: inline-block;
+            padding: 5px 14px;
+            border-radius: 20px;
+            background: rgba(255, 77, 141, 0.25);
+            border: 1px solid var(--accent-pink);
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #ff75a0;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+            .section-title i {
+                color: var(--accent-pink);
+            }
+
+        .info-text {
+            font-size: 0.95rem;
+            color: rgba(255,255,255,0.85);
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .vaccines-list {
+            list-style: none;
+            margin-bottom: 25px;
+        }
+
+            .vaccines-list li {
+                font-size: 0.9rem;
+                color: rgba(255,255,255,0.9);
+                padding: 6px 12px;
+                background: rgba(0, 0, 0, 0.2);
+                border-radius: 10px;
+                margin-bottom: 6px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                border: 1px solid rgba(255,255,255,0.08);
+            }
+
+                .vaccines-list li i {
+                    color: #22c55e;
+                }
+
+        .btn-action-group {
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn-adopt {
+            flex: 1;
+            padding: 14px;
+            border: none;
+            border-radius: 30px;
+            background: linear-gradient(135deg, var(--accent-pink), #e01e5a);
+            color: white;
+            font-size: 0.95rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 6px 18px rgba(255,77,141,0.35);
+            text-decoration: none;
+            text-align: center;
+        }
+
+            .btn-adopt:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 10px 22px rgba(255,77,141,0.5);
+            }
+
+        .btn-back {
+            padding: 14px 25px;
+            border-radius: 30px;
+            border: 1px solid var(--card-border);
+            background: rgba(255,255,255,0.08);
+            color: #fff;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.3s;
+            display: inline-block;
+            text-align: center;
+        }
+
+            .btn-back:hover {
+                background: rgba(255,255,255,0.2);
+            }
+
+        @media (max-width: 768px) {
+            .detail-card {
+                grid-template-columns: 1fr;
+                padding: 25px;
+            }
+
+            .cat-image-box {
+                height: 240px;
+            }
+
+            .navbar {
+                padding: 0 20px;
+            }
+
+            .nav-menu {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="brand-logo"><i class="fa-solid fa-cat"></i> ADOPTA AMOR</a>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+            <li class="nav-item"><a href="gatos.html"><i class="fa-solid fa-paw"></i> Catálogo</a></li>
+            <li class="nav-item"><a href="adopcion.html"><i class="fa-solid fa-heart"></i> Adopciones</a></li>
+            <li class="nav-item"><a href="ubicacion.html"><i class="fa-solid fa-location-dot"></i> Ubicación</a></li>
+            <li class="nav-item dropdown">
+                <a href="#" class="dropbtn"><i class="fa-solid fa-folder-gear"></i> Gestión <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 4px;"></i></a>
+                <ul class="dropdown-content">
+                    <li><a href="gestion-gatos.html"><i class="fa-solid fa-cat"></i> Gestión Gatos</a></li>
+                    <li><a href="gestion-usuarios.html"><i class="fa-solid fa-users"></i> Gestión Usuarios</a></li>
+                    <li><a href="gestion-solicitudes.html"><i class="fa-solid fa-file-lines"></i> Gestión Solicitudes</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="dropbtn"><i class="fa-solid fa-user"></i> Mi Perfil <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 4px;"></i></a>
+                <ul class="dropdown-content">
+                    <li><a href="perfil.html"><i class="fa-solid fa-id-card"></i> Perfil</a></li>
+                    <li><a href="Login.html"><i class="fa-solid fa-right-to-bracket"></i> Login</a></li>
+                    <li><a href="Registro.html"><i class="fa-solid fa-user-plus"></i> Registro</a></li>
+                    <li><a href="Login.html"><i class="fa-solid fa-right-from-bracket"></i> Salir</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="acercade.html"><i class="fa-solid fa-circle-question"></i> Ayuda</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <div class="detail-card" id="detailCard">
+            <div class="cat-image-box">
+                <img id="catImg" src="" alt="Gatito">
+            </div>
+            <div class="cat-info-box">
+                <h1 id="catName">Cargando...</h1>
+                <div class="cat-badge" id="catBreed">Raza</div>
+
+                <div class="section-title"><i class="fa-solid fa-heart-pulse"></i> Personalidad</div>
+                <p class="info-text" id="catPersonality">Cargando información de personalidad...</p>
+
+                <div class="section-title"><i class="fa-solid fa-syringe"></i> Vacunas y Salud</div>
+                <ul class="vaccines-list" id="catVaccines">
+                </ul>
+
+                <div class="btn-action-group">
+                    <a href="gatos.html" class="btn-back">VOLVER</a>
+                    <a href="#" id="btnAdoptarLink" class="btn-adopt">ADOPTAR AHORA</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="detalles.js"></script>
+</body>
+</html>

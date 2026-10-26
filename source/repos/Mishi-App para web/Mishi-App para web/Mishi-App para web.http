@@ -1,0 +1,6 @@
+@Mishi_App_para_web_HostAddress = http://localhost:5189
+
+GET {{Mishi_App_para_web_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

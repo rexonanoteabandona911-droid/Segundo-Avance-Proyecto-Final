@@ -1,0 +1,705 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bienvenido a Mishi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --pink: #ff4d8d;
+            --accent-pink: #ff4d8d;
+            --soft-pink: #ff9ec4;
+            --purple: #7c3aed;
+            --card-border: rgba(255,255,255,.22);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            padding: 100px 16px 30px;
+            background: linear-gradient(135deg, #7b2cbf, #3c096c, #10002b, #5b1a9c);
+            background-size: 300% 300%;
+            animation: fondo 16s ease infinite;
+            color: #fff;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        @keyframes fondo {
+            0%,100% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            background-image: radial-gradient(rgba(255,255,255,.08) 2px, transparent 2px);
+            background-size: 32px 32px;
+        }
+
+        .orb {
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(70px);
+            opacity: .38;
+            pointer-events: none;
+            animation: flotar 9s ease-in-out infinite;
+        }
+
+            .orb.a {
+                width: 340px;
+                height: 340px;
+                background: var(--pink);
+                top: -90px;
+                left: -90px;
+            }
+
+            .orb.b {
+                width: 400px;
+                height: 400px;
+                background: #6d28d9;
+                bottom: -130px;
+                right: -110px;
+                animation-delay: -4s;
+            }
+
+        @keyframes flotar {
+            50% {
+                transform: translate(30px, 25px);
+            }
+        }
+
+        .huellas {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: 0;
+        }
+
+            .huellas i {
+                position: absolute;
+                bottom: -60px;
+                color: rgba(255,255,255,.12);
+                font-size: 28px;
+                animation: subir linear infinite;
+            }
+
+                .huellas i:nth-child(1) {
+                    left: 8%;
+                    font-size: 26px;
+                    animation-duration: 18s;
+                }
+
+                .huellas i:nth-child(2) {
+                    left: 22%;
+                    font-size: 40px;
+                    animation-duration: 24s;
+                    animation-delay: -6s;
+                }
+
+                .huellas i:nth-child(3) {
+                    left: 40%;
+                    font-size: 22px;
+                    animation-duration: 20s;
+                    animation-delay: -12s;
+                }
+
+                .huellas i:nth-child(4) {
+                    left: 60%;
+                    font-size: 36px;
+                    animation-duration: 26s;
+                    animation-delay: -3s;
+                }
+
+                .huellas i:nth-child(5) {
+                    left: 78%;
+                    font-size: 28px;
+                    animation-duration: 19s;
+                    animation-delay: -9s;
+                }
+
+                .huellas i:nth-child(6) {
+                    left: 92%;
+                    font-size: 34px;
+                    animation-duration: 23s;
+                    animation-delay: -15s;
+                }
+
+        @keyframes subir {
+            from {
+                transform: translateY(0) rotate(0);
+            }
+
+            to {
+                transform: translateY(-115vh) rotate(40deg);
+            }
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 75px;
+            background: rgba(16, 0, 43, 0.85);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid var(--card-border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 40px;
+            z-index: 1000;
+        }
+
+        .brand-logo {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+            .brand-logo i {
+                color: var(--accent-pink);
+                transition: transform .4s;
+            }
+
+            .brand-logo:hover i {
+                transform: rotate(-15deg) scale(1.2);
+            }
+
+        .nav-menu {
+            display: flex;
+            list-style: none !important;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-item a {
+            color: rgba(255,255,255,0.85);
+            text-decoration: none;
+            font-size: 0.9rem;
+            padding: 8px 14px;
+            border-radius: 20px;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+            .nav-item a:hover, .nav-item a.active {
+                color: #fff;
+                background: rgba(255,255,255,0.18);
+            }
+
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: 1px solid var(--card-border);
+            color: #fff;
+            width: 42px;
+            height: 42px;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            cursor: pointer;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none !important;
+            position: absolute;
+            background: rgba(16, 0, 43, 0.95);
+            backdrop-filter: blur(15px);
+            min-width: 180px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            z-index: 1000;
+            list-style: none !important;
+            padding: 8px 0 !important;
+            margin: 0 !important;
+            top: 100%;
+            left: 0;
+        }
+
+            .dropdown-content li {
+                list-style: none !important;
+            }
+
+                .dropdown-content li a {
+                    color: rgba(255,255,255,0.85);
+                    padding: 10px 16px;
+                    text-decoration: none;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    font-size: 0.85rem;
+                    transition: 0.3s;
+                    border-radius: 10px;
+                    margin: 0 6px;
+                }
+
+                    .dropdown-content li a:hover, .dropdown-content li a.active {
+                        background: rgba(255,255,255,0.18);
+                        color: #fff;
+                    }
+
+        .dropdown:hover > .dropdown-content {
+            display: block !important;
+            animation: drop .25s ease;
+        }
+
+        @keyframes drop {
+            from {
+                opacity: 0;
+                transform: translateY(-6px);
+            }
+
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+        .tarjeta-wrap {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            max-width: 440px;
+            animation: entrar .8s cubic-bezier(.2,.8,.2,1) both;
+        }
+
+        @keyframes entrar {
+            from {
+                opacity: 0;
+                transform: translateY(32px) scale(.96);
+            }
+
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        .tarjeta-wrap::before {
+            content: '';
+            position: absolute;
+            inset: -2px;
+            border-radius: 30px;
+            z-index: -1;
+            background: conic-gradient(from var(--ang, 0deg), transparent 0 60%, var(--pink), #b57bff, transparent 95%);
+            animation: borde 5s linear infinite;
+            opacity: .9;
+        }
+
+        @property --ang {
+            syntax: '<angle>';
+            inherits: false;
+            initial-value: 0deg;
+        }
+
+        @keyframes borde {
+            to {
+                --ang: 360deg;
+            }
+        }
+
+        .tarjeta {
+            padding: 40px 34px 30px;
+            text-align: center;
+            border-radius: 28px;
+            background: linear-gradient(160deg, rgba(60,9,108,.88), rgba(16,0,43,.92));
+            backdrop-filter: blur(18px);
+            box-shadow: 0 30px 60px rgba(0,0,0,.5);
+        }
+
+        .logo-circulo {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 18px;
+            border-radius: 50%;
+            background: #fff;
+            padding: 4px;
+            box-shadow: 0 10px 24px rgba(0,0,0,.4);
+            animation: respirar 4s ease-in-out infinite;
+            cursor: pointer;
+        }
+
+        @keyframes respirar {
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        .logo-circulo::before {
+            content: '';
+            position: absolute;
+            inset: -8px;
+            border-radius: 50%;
+            z-index: -1;
+            background: conic-gradient(var(--pink), #b57bff, transparent 60%, var(--pink));
+            animation: girar 6s linear infinite;
+            -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 3px), #000 calc(100% - 2px));
+            mask: radial-gradient(farthest-side, transparent calc(100% - 3px), #000 calc(100% - 2px));
+        }
+
+        @keyframes girar {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .logo-circulo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .logo-circulo.ronronea {
+            animation: ronronear .5s ease;
+        }
+
+        @keyframes ronronear {
+            25% {
+                transform: scale(1.12) rotate(8deg);
+            }
+
+            50% {
+                transform: scale(1.08) rotate(-8deg);
+            }
+
+            75% {
+                transform: scale(1.12) rotate(5deg);
+            }
+        }
+
+        h1 {
+            font-size: 1.9rem;
+            font-weight: 800;
+            letter-spacing: .5px;
+            line-height: 1.2;
+            background: linear-gradient(90deg, #fff, var(--soft-pink), #fff);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: brillo 4s linear infinite;
+        }
+
+        @keyframes brillo {
+            to {
+                background-position: 200% center;
+            }
+        }
+
+        .lema {
+            font-size: .75rem;
+            font-weight: 600;
+            letter-spacing: 6px;
+            color: var(--soft-pink);
+            margin: 6px 0 10px;
+        }
+
+        .sub {
+            font-size: .88rem;
+            line-height: 1.6;
+            color: rgba(255,255,255,.75);
+            margin-bottom: 26px;
+        }
+        .btn {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 54px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: .95rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #fff;
+            text-decoration: none;
+            transition: .3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 14px;
+        }
+
+        .btn-principal {
+            border: 0;
+            background: linear-gradient(135deg, var(--pink), #b5179e);
+            box-shadow: 0 10px 24px rgba(255,77,141,.45);
+        }
+
+            .btn-principal::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -80%;
+                width: 50%;
+                height: 100%;
+                background: linear-gradient(120deg, transparent, rgba(255,255,255,.35), transparent);
+                transform: skewX(-20deg);
+            }
+
+            .btn-principal:hover::after {
+                animation: barrido .8s ease;
+            }
+
+        @keyframes barrido {
+            to {
+                left: 140%;
+            }
+        }
+
+        .btn-principal:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 14px 30px rgba(255,77,141,.6);
+        }
+
+        .btn-borde {
+            border: 2px solid rgba(255,255,255,.35);
+            background: rgba(255,255,255,.07);
+        }
+
+            .btn-borde:hover {
+                transform: translateY(-3px);
+                border-color: var(--soft-pink);
+                background: rgba(255,255,255,.16);
+            }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        .btn i {
+            transition: transform .3s;
+        }
+
+        .btn:hover i {
+            transform: translateX(4px);
+        }
+        .beneficios {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 22px;
+        }
+
+        .benef {
+            padding: 14px 6px;
+            border-radius: 16px;
+            background: rgba(255,255,255,.07);
+            border: 1px solid rgba(255,255,255,.12);
+            transition: .3s;
+            cursor: default;
+        }
+
+            .benef:hover {
+                transform: translateY(-5px);
+                background: rgba(255,77,141,.16);
+                border-color: var(--pink);
+            }
+
+            .benef i {
+                display: block;
+                font-size: 1.3rem;
+                color: var(--soft-pink);
+                margin-bottom: 6px;
+                transition: .3s;
+            }
+
+            .benef:hover i {
+                color: #fff;
+                transform: scale(1.2);
+            }
+
+            .benef span {
+                font-size: .72rem;
+                color: rgba(255,255,255,.8);
+                line-height: 1.3;
+                display: block;
+            }
+
+        .explorar {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 20px;
+            font-size: .82rem;
+            color: #fff;
+            text-decoration: none;
+            opacity: .8;
+            transition: .25s;
+        }
+
+            .explorar:hover {
+                opacity: 1;
+                color: var(--soft-pink);
+            }
+
+        a:focus-visible, button:focus-visible {
+            outline: 2px solid #fff;
+            outline-offset: 3px;
+        }
+
+        @media (max-width: 860px) {
+            .navbar {
+                padding: 0 16px;
+            }
+
+            .nav-toggle {
+                display: block;
+            }
+
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 75px;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                gap: 4px;
+                padding: 12px 16px 16px;
+                background: rgba(16,0,43,.97);
+                border-bottom: 1px solid var(--card-border);
+                max-height: calc(100vh - 75px);
+                overflow-y: auto;
+            }
+
+                .nav-menu.abierto {
+                    display: flex;
+                }
+
+            .dropdown {
+                display: block;
+            }
+
+            .dropdown-content {
+                display: block !important;
+                position: static;
+                box-shadow: none;
+                border: 0;
+                background: transparent;
+                padding: 0 0 0 14px !important;
+            }
+        }
+
+        @media (max-width: 440px) {
+            .tarjeta {
+                padding: 32px 20px 24px;
+            }
+
+            h1 {
+                font-size: 1.6rem;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation: none !important;
+                transition: none !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="orb a"></div>
+    <div class="orb b"></div>
+    <div class="huellas">
+        <i class="fa-solid fa-paw"></i><i class="fa-solid fa-paw"></i><i class="fa-solid fa-paw"></i>
+        <i class="fa-solid fa-paw"></i><i class="fa-solid fa-paw"></i><i class="fa-solid fa-paw"></i>
+    </div>
+    <nav class="navbar">
+        <a href="index.html" class="brand-logo"><i class="fa-solid fa-cat"></i> ADOPTA AMOR</a>
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menú"><i class="fa-solid fa-bars"></i></button>
+        <ul class="nav-menu" id="navMenu">
+            <li class="nav-item"><a href="index.html" class="active"><i class="fa-solid fa-house"></i> Inicio</a></li>
+            <li class="nav-item"><a href="gatos.html"><i class="fa-solid fa-paw"></i> Catálogo</a></li>
+            <li class="nav-item"><a href="adopcion.html"><i class="fa-solid fa-heart"></i> Adopciones</a></li>
+            <li class="nav-item"><a href="ubicacion.html"><i class="fa-solid fa-location-dot"></i> Ubicación</a></li>
+            <li class="nav-item dropdown">
+                <a href="#" class="dropbtn"><i class="fa-solid fa-gear"></i> Gestión <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 4px;"></i></a>
+                <ul class="dropdown-content">
+                    <li><a href="gestion-gatos.html"><i class="fa-solid fa-cat"></i> Gestión Gatos</a></li>
+                    <li><a href="gestion-usuarios.html"><i class="fa-solid fa-users"></i> Gestión Usuarios</a></li>
+                    <li><a href="gestion-solicitudes.html"><i class="fa-solid fa-file-lines"></i> Gestión Solicitudes</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="dropbtn"><i class="fa-solid fa-user"></i> Mi Perfil <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 4px;"></i></a>
+                <ul class="dropdown-content">
+                    <li><a href="perfil.html"><i class="fa-solid fa-id-card"></i> Perfil</a></li>
+                    <li><a href="Login.html"><i class="fa-solid fa-right-to-bracket"></i> Login</a></li>
+                    <li><a href="Registro.html"><i class="fa-solid fa-user-plus"></i> Registro</a></li>
+                    <li><a href="Login.html"><i class="fa-solid fa-right-from-bracket"></i> Salir</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="acercade.html"><i class="fa-solid fa-circle-question"></i> Ayuda</a></li>
+        </ul>
+    </nav>
+
+    <div class="tarjeta-wrap">
+        <main class="tarjeta">
+            <div class="logo-circulo" id="logo" title="¡Acarícialo!">
+                <img src="img/mascota.png" alt="Logo Mishi">
+            </div>
+            <h1>¡Bienvenido a Mishi!</h1>
+            <p class="lema">ADOPTA AMOR</p>
+            <p class="sub">Encuentra a tu compañero ideal. Adopta de forma responsable y dale un hogar a un gatito rescatado.</p>
+
+            <a class="btn btn-principal" href="Login.html"><i class="fa-solid fa-right-to-bracket"></i> Iniciar sesión</a>
+            <a class="btn btn-borde" href="Registro.html"><i class="fa-solid fa-user-plus"></i> Crear cuenta</a>
+
+            <div class="beneficios">
+                <div class="benef"><i class="fa-solid fa-paw"></i><span>Catálogo de gatitos</span></div>
+                <div class="benef"><i class="fa-solid fa-file-lines"></i><span>Solicitudes en línea</span></div>
+                <div class="benef"><i class="fa-solid fa-heart"></i><span>Adopción responsable</span></div>
+            </div>
+
+            <a class="explorar" href="gatos.html"><i class="fa-solid fa-eye"></i> Explorar el catálogo sin cuenta</a>
+        </main>
+    </div>
+
+    <script>
+        // @ts-nocheck
+        window.addEventListener('load', function () {
+            document.getElementById('navToggle').addEventListener('click', function () {
+                document.getElementById('navMenu').classList.toggle('abierto');
+            });
+            var logo = document.getElementById('logo');
+            logo.addEventListener('click', function () {
+                logo.classList.remove('ronronea');
+                void logo.offsetWidth;
+                logo.classList.add('ronronea');
+            });
+        });
+    </script>
+</body>
+</html>

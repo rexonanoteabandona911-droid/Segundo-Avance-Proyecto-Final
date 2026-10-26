@@ -1,0 +1,65 @@
+wwwroot\Acercade.html
+wwwroot\acercade.js
+wwwroot\adopcion.html
+wwwroot\adopcion.js
+wwwroot\auth.css
+wwwroot\detalles.html
+wwwroot\detalles.js
+wwwroot\estilos.css
+wwwroot\gatos.html
+wwwroot\gatos.js
+wwwroot\gestion-gatos.html
+wwwroot\gestion-gatos.js
+wwwroot\gestion-solicitudes.html
+wwwroot\gestion-solicitudes.js
+wwwroot\gestion-usuarios.html
+wwwroot\gestion-usuarios.js
+wwwroot\img\.png
+wwwroot\img\capuchino.png
+wwwroot\img\despeinado.png
+wwwroot\img\felipe.png
+wwwroot\img\garfield.png
+wwwroot\img\kimby.png
+wwwroot\img\linda.png
+wwwroot\img\lindasiames.png
+wwwroot\img\logo.png
+wwwroot\img\luciana.png
+wwwroot\img\mandarino.png
+wwwroot\img\mascota.png
+wwwroot\img\minnie.png
+wwwroot\img\mishi.png
+wwwroot\img\panchito.png
+wwwroot\img\pantalones.png
+wwwroot\img\pelusa.png
+wwwroot\img\Rúben.png
+wwwroot\img\sorbete.png
+wwwroot\index.html
+wwwroot\Login.html
+wwwroot\login.js
+wwwroot\perfil.html
+wwwroot\perfil.js
+wwwroot\Registro.html
+wwwroot\ubicacion.html
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\wwwroot\Acercade.html
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\wwwroot\acercade.js
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\wwwroot\adopcion.html
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\wwwroot\adopcion.js
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\wwwroot\auth.css
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\wwwroot\detalles.html
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\wwwroot\detalles.js
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\wwwroot\estilos.css
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\wwwroot\gatos.html
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\wwwroot\gatos.js
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\wwwroot\gestion-gatos.html
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\wwwroot\gestion-gatos.js
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\wwwroot\gestion-solicitudes.html
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\wwwroot\gestion-solicitudes.js
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\wwwroot\gestion-usuarios.html
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\wwwroot\gestion-usuarios.js
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\wwwroot\index.html
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\wwwroot\Login.html
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\wwwroot\login.js
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\wwwroot\perfil.html
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\wwwroot\perfil.js
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\wwwroot\Registro.html
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\wwwroot\ubicacion.html

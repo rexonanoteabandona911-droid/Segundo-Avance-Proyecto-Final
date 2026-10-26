@@ -1,0 +1,770 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de - Mishi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-gradient: linear-gradient(135deg, #7b2cbf 0%, #3c096c 50%, #10002b 100%);
+            --card-bg: rgba(255, 255, 255, 0.12);
+            --card-border: rgba(255, 255, 255, 0.22);
+            --accent-pink: #ff4d8d;
+            --soft-pink: #ff75a0;
+            --text-soft: rgba(255, 255, 255, 0.82);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            min-height: 100vh;
+            background: var(--bg-gradient);
+            background-attachment: fixed;
+            color: #fff;
+            padding: 100px 16px 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+            body::before {
+                content: '';
+                position: fixed;
+                inset: 0;
+                background-image: radial-gradient(rgba(255,255,255,0.08) 2px, transparent 2px);
+                background-size: 32px 32px;
+                pointer-events: none;
+                z-index: 0;
+            }
+
+        /* Luces de fondo que reaccionan al mouse */
+        .glow {
+            position: fixed;
+            width: 420px;
+            height: 420px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255,77,141,0.28), transparent 70%);
+            pointer-events: none;
+            z-index: 0;
+            transform: translate(-50%, -50%);
+            left: 70%;
+            top: 30%;
+            transition: left 0.9s ease-out, top 0.9s ease-out;
+        }
+
+        /* ============ NAVBAR (sin cambios de estructura) ============ */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 75px;
+            background: rgba(16, 0, 43, 0.85);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid var(--card-border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 40px;
+            z-index: 1000;
+        }
+
+        .brand-logo {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+            .brand-logo i {
+                color: var(--accent-pink);
+                transition: transform .4s;
+            }
+
+            .brand-logo:hover i {
+                transform: rotate(-15deg) scale(1.2);
+            }
+
+        .nav-menu {
+            display: flex;
+            list-style: none !important;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-item a {
+            color: rgba(255,255,255,0.85);
+            text-decoration: none;
+            font-size: 0.9rem;
+            padding: 8px 14px;
+            border-radius: 20px;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+            .nav-item a:hover, .nav-item a.active {
+                color: #fff;
+                background: rgba(255,255,255,0.18);
+            }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none !important;
+            position: absolute;
+            background: rgba(16, 0, 43, 0.95);
+            backdrop-filter: blur(15px);
+            min-width: 180px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            z-index: 1000;
+            list-style: none !important;
+            padding: 8px 0 !important;
+            margin: 0 !important;
+            top: 100%;
+            left: 0;
+        }
+
+            .dropdown-content li {
+                list-style: none !important;
+            }
+
+                .dropdown-content li a {
+                    color: rgba(255,255,255,0.85);
+                    padding: 10px 16px;
+                    text-decoration: none;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    font-size: 0.85rem;
+                    transition: 0.3s;
+                    border-radius: 10px;
+                    margin: 0 6px;
+                }
+
+                    .dropdown-content li a:hover {
+                        background: rgba(255,255,255,0.18);
+                        color: #fff;
+                    }
+
+        .dropdown:hover > .dropdown-content {
+            display: block !important;
+            animation: drop .25s ease;
+        }
+
+        @keyframes drop {
+            from {
+                opacity: 0;
+                transform: translateY(-6px);
+            }
+
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        /* ============ TARJETA PRINCIPAL ============ */
+        .about-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(16px);
+            border: 1px solid var(--card-border);
+            border-radius: 28px;
+            width: 100%;
+            max-width: 680px;
+            padding: 40px 36px 34px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            position: relative;
+            z-index: 1;
+            animation: enter .8s cubic-bezier(.2,.8,.2,1) both;
+            transition: transform .15s ease-out;
+            transform-style: preserve-3d;
+        }
+
+        @keyframes enter {
+            from {
+                opacity: 0;
+                transform: translateY(30px) scale(.97);
+            }
+
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        /* Avatar con anillo giratorio */
+        .cat-avatar {
+            position: relative;
+            width: 96px;
+            height: 96px;
+            margin: 0 auto 16px;
+            border-radius: 50%;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            cursor: pointer;
+            transition: transform .4s cubic-bezier(.3,1.6,.5,1);
+        }
+
+            .cat-avatar::before {
+                content: '';
+                position: absolute;
+                inset: -6px;
+                border-radius: 50%;
+                background: conic-gradient(var(--accent-pink), #b57bff, transparent 60%, var(--accent-pink));
+                z-index: -1;
+                animation: spin 6s linear infinite;
+                -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 3px), #000 calc(100% - 2px));
+                mask: radial-gradient(farthest-side, transparent calc(100% - 3px), #000 calc(100% - 2px));
+            }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .cat-avatar i {
+            font-size: 3.3rem;
+            color: #10002b;
+        }
+
+        .cat-avatar:hover {
+            transform: scale(1.1) rotate(-6deg);
+        }
+
+        .cat-avatar.purr {
+            animation: purr .5s ease;
+        }
+
+        @keyframes purr {
+            0%,100% {
+                transform: scale(1);
+            }
+
+            25% {
+                transform: scale(1.12) rotate(8deg);
+            }
+
+            50% {
+                transform: scale(1.08) rotate(-8deg);
+            }
+
+            75% {
+                transform: scale(1.12) rotate(5deg);
+            }
+        }
+
+        .title-mishi {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--soft-pink);
+            letter-spacing: 2px;
+        }
+
+        .subtitle-mishi {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 4px;
+            letter-spacing: .5px;
+        }
+
+        .tagline {
+            font-size: .85rem;
+            color: var(--text-soft);
+            margin-bottom: 22px;
+        }
+
+        .version-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: .72rem;
+            font-weight: 600;
+            padding: 4px 12px;
+            margin-bottom: 22px;
+            border-radius: 20px;
+            background: rgba(255,77,141,.18);
+            border: 1px solid rgba(255,77,141,.5);
+        }
+
+            .version-chip .dot {
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                background: #4ade80;
+                animation: pulse 1.8s infinite;
+            }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(74,222,128,.7);
+            }
+
+            100% {
+                box-shadow: 0 0 0 9px rgba(74,222,128,0);
+            }
+        }
+
+        /* ============ PESTAÑAS ============ */
+        .tabs {
+            position: relative;
+            display: flex;
+            gap: 4px;
+            padding: 5px;
+            background: rgba(0,0,0,0.3);
+            border: 1px solid var(--card-border);
+            border-radius: 30px;
+            margin-bottom: 18px;
+        }
+
+        .tab-indicator {
+            position: absolute;
+            top: 5px;
+            bottom: 5px;
+            left: 5px;
+            background: linear-gradient(135deg, var(--accent-pink), #b5179e);
+            border-radius: 25px;
+            box-shadow: 0 4px 14px rgba(255,77,141,.45);
+            transition: transform .35s cubic-bezier(.5,1.4,.5,1), width .35s;
+        }
+
+        .tab-btn {
+            position: relative;
+            z-index: 1;
+            flex: 1;
+            border: 0;
+            background: none;
+            color: rgba(255,255,255,.75);
+            padding: 10px 8px;
+            border-radius: 25px;
+            font-size: .82rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+            transition: color .3s;
+        }
+
+            .tab-btn:hover {
+                color: #fff;
+            }
+
+            .tab-btn.active {
+                color: #fff;
+            }
+
+        .info-box {
+            background: rgba(0,0,0,0.3);
+            border: 1px solid var(--card-border);
+            border-radius: 18px;
+            padding: 22px;
+            text-align: left;
+            font-size: .9rem;
+            line-height: 1.65;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 26px;
+            min-height: 270px;
+        }
+
+        .panel {
+            display: none;
+        }
+
+            .panel.show {
+                display: block;
+                animation: fade .45s ease;
+            }
+
+        @keyframes fade {
+            from {
+                opacity: 0;
+                transform: translateX(14px);
+            }
+
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        .panel h3 {
+            font-size: 1rem;
+            margin-bottom: 8px;
+            color: var(--soft-pink);
+        }
+
+        .panel p + p {
+            margin-top: 10px;
+        }
+
+        /* Estadísticas */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 18px;
+        }
+
+        .stat {
+            text-align: center;
+            padding: 12px 6px;
+            border-radius: 14px;
+            background: rgba(255,255,255,.07);
+            border: 1px solid rgba(255,255,255,.12);
+            transition: .3s;
+        }
+
+            .stat:hover {
+                background: rgba(255,77,141,.18);
+                border-color: var(--accent-pink);
+                transform: translateY(-3px);
+            }
+
+            .stat b {
+                display: block;
+                font-size: 1.5rem;
+                color: var(--soft-pink);
+            }
+
+            .stat span {
+                font-size: .72rem;
+                color: var(--text-soft);
+            }
+
+        /* Características */
+        .feature-list {
+            display: grid;
+            gap: 10px;
+        }
+
+        .feature {
+            display: flex;
+            gap: 14px;
+            align-items: flex-start;
+            padding: 10px 12px;
+            border-radius: 14px;
+            border: 1px solid transparent;
+            transition: .3s;
+        }
+
+            .feature:hover {
+                background: rgba(255,255,255,.08);
+                border-color: var(--card-border);
+                transform: translateX(6px);
+            }
+
+            .feature .ico {
+                flex: 0 0 38px;
+                height: 38px;
+                border-radius: 12px;
+                display: grid;
+                place-items: center;
+                background: rgba(255,77,141,.2);
+                color: var(--soft-pink);
+                transition: .3s;
+            }
+
+            .feature:hover .ico {
+                background: var(--accent-pink);
+                color: #fff;
+                transform: rotate(-8deg) scale(1.1);
+            }
+
+            .feature strong {
+                font-size: .88rem;
+                display: block;
+            }
+
+            .feature small {
+                font-size: .78rem;
+                color: var(--text-soft);
+                line-height: 1.4;
+                display: block;
+            }
+
+        /* Tecnología */
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .tech {
+            text-align: center;
+            padding: 16px 8px;
+            border-radius: 16px;
+            background: rgba(255,255,255,.07);
+            border: 1px solid rgba(255,255,255,.14);
+            transition: .35s;
+            cursor: default;
+        }
+
+            .tech i {
+                font-size: 1.6rem;
+                color: var(--soft-pink);
+                margin-bottom: 8px;
+                transition: .35s;
+            }
+
+            .tech strong {
+                display: block;
+                font-size: .8rem;
+            }
+
+            .tech small {
+                font-size: .7rem;
+                color: var(--text-soft);
+            }
+
+            .tech:hover {
+                transform: translateY(-6px);
+                background: rgba(255,77,141,.16);
+                border-color: var(--accent-pink);
+                box-shadow: 0 10px 22px rgba(0,0,0,.35);
+            }
+
+                .tech:hover i {
+                    transform: scale(1.25);
+                    color: #fff;
+                }
+
+        .tech-note {
+            margin-top: 14px;
+            font-size: .8rem;
+            color: var(--text-soft);
+        }
+
+        .dev-line {
+            margin-top: 14px;
+            padding-top: 12px;
+            border-top: 1px solid rgba(255,255,255,.15);
+            font-size: .85rem;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+            .dev-line span {
+                color: var(--text-soft);
+            }
+
+        /* ============ BOTONES ============ */
+        .btn-row {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+        }
+
+        .btn-action {
+            position: relative;
+            overflow: hidden;
+            flex: 1;
+            padding: 13px 20px;
+            border-radius: 30px;
+            border: 1px solid var(--card-border);
+            background: rgba(255,255,255,0.1);
+            color: #fff;
+            font-weight: 700;
+            font-size: .85rem;
+            text-transform: uppercase;
+            letter-spacing: .5px;
+            cursor: pointer;
+            transition: 0.3s;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+            .btn-action:hover {
+                background: var(--accent-pink);
+                border-color: var(--accent-pink);
+                transform: translateY(-3px);
+                box-shadow: 0 8px 20px rgba(255,77,141,.45);
+            }
+
+            .btn-action:active {
+                transform: translateY(0);
+            }
+
+        .ripple {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255,255,255,.45);
+            transform: scale(0);
+            animation: rip .6s linear;
+            pointer-events: none;
+        }
+
+        @keyframes rip {
+            to {
+                transform: scale(4);
+                opacity: 0;
+            }
+        }
+
+        a:focus-visible, button:focus-visible {
+            outline: 2px solid #fff;
+            outline-offset: 3px;
+        }
+
+        .footer-note {
+            margin-top: 18px;
+            font-size: .75rem;
+            color: rgba(255,255,255,.6);
+            position: relative;
+            z-index: 1;
+        }
+
+        @media (max-width: 720px) {
+            .navbar {
+                padding: 0 16px;
+            }
+
+            .nav-menu {
+                display: none;
+            }
+
+            .about-card {
+                padding: 30px 18px;
+            }
+
+            .stats, .tech-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .btn-row {
+                flex-direction: column;
+            }
+
+            .tab-btn span {
+                display: none;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before {
+                animation: none !important;
+                transition: none !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="glow" id="glow"></div>
+
+    <nav class="navbar">
+        <a href="index.html" class="brand-logo"><i class="fa-solid fa-cat"></i> ADOPTA AMOR</a>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+            <li class="nav-item"><a href="gatos.html"><i class="fa-solid fa-paw"></i> Catálogo</a></li>
+            <li class="nav-item"><a href="adopcion.html"><i class="fa-solid fa-heart"></i> Adopciones</a></li>
+            <li class="nav-item"><a href="ubicacion.html"><i class="fa-solid fa-location-dot"></i> Ubicación</a></li>
+            <li class="nav-item dropdown">
+                <a href="#" class="dropbtn"><i class="fa-solid fa-folder-gear"></i> Gestión <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 4px;"></i></a>
+                <ul class="dropdown-content">
+                    <li><a href="gestion-gatos.html"><i class="fa-solid fa-cat"></i> Gestión Gatos</a></li>
+                    <li><a href="gestion-usuarios.html"><i class="fa-solid fa-users"></i> Gestión Usuarios</a></li>
+                    <li><a href="gestion-solicitudes.html"><i class="fa-solid fa-file-lines"></i> Gestión Solicitudes</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="dropbtn"><i class="fa-solid fa-user"></i> Mi Perfil <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 4px;"></i></a>
+                <ul class="dropdown-content">
+                    <li><a href="perfil.html"><i class="fa-solid fa-id-card"></i> Perfil</a></li>
+                    <li><a href="Login.html"><i class="fa-solid fa-right-to-bracket"></i> Login</a></li>
+                    <li><a href="Registro.html"><i class="fa-solid fa-user-plus"></i> Registro</a></li>
+                    <li><a href="Login.html"><i class="fa-solid fa-right-from-bracket"></i> Salir</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="acercade.html"><i class="fa-solid fa-circle-question"></i> Ayuda</a></li>
+        </ul>
+    </nav>
+
+    <main class="about-card" id="card">
+        <div class="cat-avatar" id="avatar" title="¡Acarícialo!"><i class="fa-solid fa-cat"></i></div>
+        <h1 class="title-mishi">MISHI</h1>
+        <p class="subtitle-mishi">Sistema de gestión y adopción de gatitos</p>
+        <p class="tagline">Cada gatito merece un hogar, y cada hogar merece al gatito indicado.</p>
+        <div class="version-chip"><span class="dot"></span> Versión 1.0 · 2026</div>
+
+        <div class="tabs" role="tablist">
+            <div class="tab-indicator" id="indicator"></div>
+            <button class="tab-btn active" role="tab" data-tab="sobre"><i class="fa-solid fa-circle-info"></i><span>Sobre Mishi</span></button>
+            <button class="tab-btn" role="tab" data-tab="funciones"><i class="fa-solid fa-list-check"></i><span>Funciones</span></button>
+            <button class="tab-btn" role="tab" data-tab="tecnologia"><i class="fa-solid fa-microchip"></i><span>Tecnología</span></button>
+        </div>
+
+        <div class="info-box">
+            <!-- SOBRE -->
+            <section class="panel show" id="sobre">
+                <h3>Adopción responsable, de principio a fin</h3>
+                <p>Mishi es una plataforma que conecta a gatitos rescatados con familias que quieren adoptarlos. Centraliza el registro de los gatitos, revisa cada solicitud de adopción y organiza el rescate de gatitos en situación de calle.</p>
+                <p>Nuestro objetivo es que cada adopción sea informada, segura y con seguimiento.</p>
+                <div class="stats">
+                    <div class="stat"><b data-count="3">0</b><span>Módulos de gestión</span></div>
+                    <div class="stat"><b data-count="3">0</b><span>Capas tecnológicas</span></div>
+                    <div class="stat"><b data-count="100" data-suffix="%">0</b><span>Compromiso animal</span></div>
+                </div>
+            </section>
+            <section class="panel" id="funciones">
+                <div class="feature-list">
+                    <div class="feature"><div class="ico"><i class="fa-solid fa-paw"></i></div><div><strong>Catálogo de gatitos</strong><small>Consulta los gatitos disponibles con su información y estado.</small></div></div>
+                    <div class="feature"><div class="ico"><i class="fa-solid fa-file-lines"></i></div><div><strong>Solicitudes de adopción</strong><small>Envía, revisa y da seguimiento a cada solicitud.</small></div></div>
+                    <div class="feature"><div class="ico"><i class="fa-solid fa-users"></i></div><div><strong>Gestión de usuarios</strong><small>Administra cuentas y permisos según el rol de cada persona.</small></div></div>
+                    <div class="feature"><div class="ico"><i class="fa-solid fa-house-chimney"></i></div><div><strong>Rescate y refugio</strong><small>Registra a los gatitos rescatados y ubica el punto de atención.</small></div></div>
+                </div>
+            </section>
+            <section class="panel" id="tecnologia">
+                <div class="tech-grid">
+                    <div class="tech"><i class="fa-solid fa-window-maximize"></i><strong>WinForms</strong><small>Aplicación de escritorio</small></div>
+                    <div class="tech"><i class="fa-solid fa-server"></i><strong>ASP.NET Core</strong><small>Web API</small></div>
+                    <div class="tech"><i class="fa-solid fa-database"></i><strong>SQL Server</strong><small>Base de datos</small></div>
+                </div>
+                <p class="tech-note">La aplicación y la web se conectan a la misma API, así que la información siempre está sincronizada.</p>
+                <div class="dev-line"><strong><i class="fa-solid fa-code" style="color:var(--soft-pink)"></i> Desarrollado por Kimberly Jaimes</strong><span>© 2026</span></div>
+            </section>
+        </div>
+
+        <div class="btn-row">
+            <button id="btnCerrar" class="btn-action"><i class="fa-solid fa-xmark"></i> Cerrar</button>
+            <a href="gatos.html" class="btn-action"><i class="fa-solid fa-arrow-left"></i> Volver al catálogo</a>
+        </div>
+    </main>
+
+    <p class="footer-note">Mishi · Sistema de gestión y adopción de gatitos</p>
+
+    <script src="acercade.js"></script>
+</body>
+</html>

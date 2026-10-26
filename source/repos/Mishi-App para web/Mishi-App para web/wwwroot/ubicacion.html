@@ -1,0 +1,958 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ubicación - Adopta Amor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --pink: #ff4d8d;
+            --accent-pink: #ff4d8d;
+            --soft-pink: #ff9ec4;
+            --purple: #7c3aed;
+            --card-border: rgba(255,255,255,.22);
+            --ok: #4ade80;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            min-height: 100vh;
+            padding: 100px 16px 40px;
+            background: linear-gradient(135deg, #7b2cbf, #3c096c, #10002b, #5b1a9c);
+            background-size: 300% 300%;
+            animation: fondo 16s ease infinite;
+            color: #fff;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        @keyframes fondo {
+            0%,100% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            background-image: radial-gradient(rgba(255,255,255,.08) 2px, transparent 2px);
+            background-size: 32px 32px;
+        }
+
+        .orb {
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(70px);
+            opacity: .38;
+            pointer-events: none;
+            animation: flotar 9s ease-in-out infinite;
+        }
+
+            .orb.a {
+                width: 340px;
+                height: 340px;
+                background: var(--pink);
+                top: -90px;
+                left: -90px;
+            }
+
+            .orb.b {
+                width: 400px;
+                height: 400px;
+                background: #6d28d9;
+                bottom: -130px;
+                right: -110px;
+                animation-delay: -4s;
+            }
+
+        @keyframes flotar {
+            50% {
+                transform: translate(30px, 25px);
+            }
+        }
+
+        .huellas {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: 0;
+        }
+
+            .huellas i {
+                position: absolute;
+                bottom: -60px;
+                color: rgba(255,255,255,.12);
+                font-size: 28px;
+                animation: subir linear infinite;
+            }
+
+                .huellas i:nth-child(1) {
+                    left: 8%;
+                    font-size: 26px;
+                    animation-duration: 18s;
+                }
+
+                .huellas i:nth-child(2) {
+                    left: 22%;
+                    font-size: 40px;
+                    animation-duration: 24s;
+                    animation-delay: -6s;
+                }
+
+                .huellas i:nth-child(3) {
+                    left: 40%;
+                    font-size: 22px;
+                    animation-duration: 20s;
+                    animation-delay: -12s;
+                }
+
+                .huellas i:nth-child(4) {
+                    left: 60%;
+                    font-size: 36px;
+                    animation-duration: 26s;
+                    animation-delay: -3s;
+                }
+
+                .huellas i:nth-child(5) {
+                    left: 78%;
+                    font-size: 28px;
+                    animation-duration: 19s;
+                    animation-delay: -9s;
+                }
+
+                .huellas i:nth-child(6) {
+                    left: 92%;
+                    font-size: 34px;
+                    animation-duration: 23s;
+                    animation-delay: -15s;
+                }
+
+        @keyframes subir {
+            from {
+                transform: translateY(0) rotate(0);
+            }
+
+            to {
+                transform: translateY(-115vh) rotate(40deg);
+            }
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 75px;
+            background: rgba(16, 0, 43, 0.85);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid var(--card-border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 40px;
+            z-index: 1000;
+        }
+
+        .brand-logo {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+            .brand-logo i {
+                color: var(--accent-pink);
+                transition: transform .4s;
+            }
+
+            .brand-logo:hover i {
+                transform: rotate(-15deg) scale(1.2);
+            }
+
+        .nav-menu {
+            display: flex;
+            list-style: none !important;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-item a {
+            color: rgba(255,255,255,0.85);
+            text-decoration: none;
+            font-size: 0.9rem;
+            padding: 8px 14px;
+            border-radius: 20px;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+            .nav-item a:hover, .nav-item a.active {
+                color: #fff;
+                background: rgba(255,255,255,0.18);
+            }
+
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: 1px solid var(--card-border);
+            color: #fff;
+            width: 42px;
+            height: 42px;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            cursor: pointer;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none !important;
+            position: absolute;
+            background: rgba(16, 0, 43, 0.95);
+            backdrop-filter: blur(15px);
+            min-width: 180px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            z-index: 1000;
+            list-style: none !important;
+            padding: 8px 0 !important;
+            margin: 0 !important;
+            top: 100%;
+            left: 0;
+        }
+
+            .dropdown-content li {
+                list-style: none !important;
+            }
+
+                .dropdown-content li a {
+                    color: rgba(255,255,255,0.85);
+                    padding: 10px 16px;
+                    text-decoration: none;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    font-size: 0.85rem;
+                    transition: 0.3s;
+                    border-radius: 10px;
+                    margin: 0 6px;
+                }
+
+                    .dropdown-content li a:hover {
+                        background: rgba(255,255,255,0.18);
+                        color: #fff;
+                    }
+
+        .dropdown:hover > .dropdown-content {
+            display: block !important;
+            animation: drop .25s ease;
+        }
+
+        @keyframes drop {
+            from {
+                opacity: 0;
+                transform: translateY(-6px);
+            }
+
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+        .contenedor {
+            position: relative;
+            z-index: 1;
+            max-width: 1150px;
+            margin: 0 auto;
+            animation: entrar .8s cubic-bezier(.2,.8,.2,1) both;
+        }
+
+        @keyframes entrar {
+            from {
+                opacity: 0;
+                transform: translateY(32px) scale(.98);
+            }
+
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        .encabezado {
+            text-align: center;
+            margin-bottom: 26px;
+        }
+
+            .encabezado .avatar {
+                position: relative;
+                width: 78px;
+                height: 78px;
+                margin: 0 auto 12px;
+                border-radius: 50%;
+                background: #fff;
+                display: grid;
+                place-items: center;
+                box-shadow: 0 10px 24px rgba(0,0,0,.4);
+            }
+
+                .encabezado .avatar::before {
+                    content: '';
+                    position: absolute;
+                    inset: -6px;
+                    border-radius: 50%;
+                    z-index: -1;
+                    background: conic-gradient(var(--pink), #b57bff, transparent 60%, var(--pink));
+                    animation: girar 6s linear infinite;
+                    -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 3px), #000 calc(100% - 2px));
+                    mask: radial-gradient(farthest-side, transparent calc(100% - 3px), #000 calc(100% - 2px));
+                }
+
+        @keyframes girar {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .encabezado .avatar i {
+            font-size: 2.3rem;
+            color: var(--pink);
+            animation: rebote 2s ease-in-out infinite;
+        }
+
+        @keyframes rebote {
+            50% {
+                transform: translateY(-5px);
+            }
+        }
+
+        h1 {
+            font-size: 1.9rem;
+            font-weight: 800;
+            letter-spacing: .5px;
+            background: linear-gradient(90deg, #fff, var(--soft-pink), #fff);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: brillo 4s linear infinite;
+        }
+
+        @keyframes brillo {
+            to {
+                background-position: 200% center;
+            }
+        }
+
+        .lema {
+            font-size: .72rem;
+            font-weight: 600;
+            letter-spacing: 6px;
+            color: var(--soft-pink);
+            margin: 4px 0 8px;
+        }
+
+        .sub {
+            font-size: .9rem;
+            color: rgba(255,255,255,.75);
+        }
+
+        .rejilla {
+            display: grid;
+            grid-template-columns: 360px 1fr;
+            gap: 22px;
+            align-items: stretch;
+        }
+
+        /* Tarjeta con borde de luz */
+        .tarjeta-wrap {
+            position: relative;
+        }
+
+            .tarjeta-wrap::before {
+                content: '';
+                position: absolute;
+                inset: -2px;
+                border-radius: 30px;
+                z-index: -1;
+                background: conic-gradient(from var(--ang, 0deg), transparent 0 60%, var(--pink), #b57bff, transparent 95%);
+                animation: borde 5s linear infinite;
+                opacity: .9;
+            }
+
+        @property --ang {
+            syntax: '<angle>';
+            inherits: false;
+            initial-value: 0deg;
+        }
+
+        @keyframes borde {
+            to {
+                --ang: 360deg;
+            }
+        }
+
+        .tarjeta {
+            height: 100%;
+            padding: 28px 24px;
+            border-radius: 28px;
+            background: linear-gradient(160deg, rgba(60,9,108,.9), rgba(16,0,43,.94));
+            backdrop-filter: blur(18px);
+            box-shadow: 0 30px 60px rgba(0,0,0,.5);
+        }
+
+            .tarjeta h2 {
+                font-size: 1.15rem;
+                font-weight: 700;
+                margin-bottom: 4px;
+            }
+
+            .tarjeta .tipo {
+                font-size: .78rem;
+                color: var(--soft-pink);
+                margin-bottom: 18px;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+                .tarjeta .tipo .dot {
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    background: var(--ok);
+                    animation: pulso 1.8s infinite;
+                }
+
+        @keyframes pulso {
+            0% {
+                box-shadow: 0 0 0 0 rgba(74,222,128,.7);
+            }
+
+            100% {
+                box-shadow: 0 0 0 9px rgba(74,222,128,0);
+            }
+        }
+
+        .dato {
+            display: flex;
+            gap: 14px;
+            align-items: flex-start;
+            padding: 12px;
+            margin-bottom: 8px;
+            border-radius: 16px;
+            border: 1px solid transparent;
+            transition: .3s;
+        }
+
+            .dato:hover {
+                background: rgba(255,255,255,.07);
+                border-color: var(--card-border);
+                transform: translateX(4px);
+            }
+
+            .dato .ico {
+                flex: 0 0 40px;
+                height: 40px;
+                border-radius: 13px;
+                display: grid;
+                place-items: center;
+                background: rgba(255,77,141,.2);
+                color: var(--soft-pink);
+                transition: .3s;
+            }
+
+            .dato:hover .ico {
+                background: var(--pink);
+                color: #fff;
+                transform: rotate(-8deg) scale(1.08);
+            }
+
+            .dato strong {
+                display: block;
+                font-size: .82rem;
+                margin-bottom: 2px;
+            }
+
+            .dato span {
+                font-size: .8rem;
+                color: rgba(255,255,255,.78);
+                line-height: 1.45;
+                display: block;
+            }
+
+        .acciones {
+            display: grid;
+            gap: 10px;
+            margin-top: 16px;
+        }
+
+        .btn {
+            position: relative;
+            overflow: hidden;
+            height: 50px;
+            border: 0;
+            border-radius: 30px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: .85rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: #fff;
+            background: linear-gradient(135deg, var(--pink), #b5179e);
+            box-shadow: 0 10px 24px rgba(255,77,141,.45);
+            transition: .3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-family: inherit;
+        }
+
+            .btn::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -80%;
+                width: 50%;
+                height: 100%;
+                background: linear-gradient(120deg, transparent, rgba(255,255,255,.35), transparent);
+                transform: skewX(-20deg);
+            }
+
+            .btn:hover::after {
+                animation: barrido .8s ease;
+            }
+
+        @keyframes barrido {
+            to {
+                left: 140%;
+            }
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 14px 30px rgba(255,77,141,.6);
+        }
+
+        .fila {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .btn-sec {
+            color: #fff;
+            font-size: .78rem;
+            font-weight: 600;
+            text-decoration: none;
+            padding: 11px 6px;
+            border-radius: 24px;
+            cursor: pointer;
+            border: 1px solid rgba(255,255,255,.2);
+            background: rgba(255,255,255,.07);
+            transition: .3s;
+            font-family: inherit;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+            .btn-sec:hover {
+                background: rgba(255,255,255,.17);
+                border-color: var(--soft-pink);
+                transform: translateY(-2px);
+            }
+
+        /* ===== MAPA ===== */
+        .mapa-card {
+            position: relative;
+            border-radius: 28px;
+            overflow: hidden;
+            min-height: 540px;
+            border: 1px solid var(--card-border);
+            box-shadow: 0 30px 60px rgba(0,0,0,.5);
+            background: rgba(0,0,0,.4);
+        }
+
+            .mapa-card iframe {
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+                border: 0;
+                opacity: 0;
+                transition: opacity .6s;
+            }
+
+                .mapa-card iframe.listo {
+                    opacity: 1;
+                }
+
+        .cargando-mapa {
+            position: absolute;
+            inset: 0;
+            display: grid;
+            place-items: center;
+            text-align: center;
+            transition: opacity .5s;
+            background: linear-gradient(135deg, #2a0a52, #10002b);
+            font-size: .85rem;
+            color: rgba(255,255,255,.8);
+        }
+
+            .cargando-mapa.oculto {
+                opacity: 0;
+                pointer-events: none;
+            }
+
+            .cargando-mapa i {
+                display: block;
+                font-size: 2rem;
+                color: var(--pink);
+                margin-bottom: 10px;
+                animation: rebote 1.2s ease-in-out infinite;
+            }
+
+        .conmutador {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            z-index: 5;
+            display: flex;
+            padding: 4px;
+            gap: 4px;
+            border-radius: 26px;
+            background: rgba(16,0,43,.82);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--card-border);
+        }
+
+            .conmutador button {
+                border: 0;
+                background: none;
+                color: rgba(255,255,255,.8);
+                padding: 8px 14px;
+                border-radius: 22px;
+                cursor: pointer;
+                font-size: .78rem;
+                font-weight: 600;
+                display: flex;
+                align-items: center;
+                gap: 7px;
+                transition: .3s;
+                font-family: inherit;
+            }
+
+                .conmutador button:hover {
+                    color: #fff;
+                }
+
+                .conmutador button.activo {
+                    background: linear-gradient(135deg, var(--pink), #b5179e);
+                    color: #fff;
+                    box-shadow: 0 4px 12px rgba(255,77,141,.45);
+                }
+        .toast {
+            position: fixed;
+            left: 50%;
+            bottom: 30px;
+            z-index: 3000;
+            transform: translate(-50%, 30px);
+            opacity: 0;
+            pointer-events: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 20px;
+            border-radius: 30px;
+            font-size: .85rem;
+            font-weight: 600;
+            background: linear-gradient(160deg, #4a1a85, #1d0540);
+            border: 1px solid var(--ok);
+            box-shadow: 0 15px 35px rgba(0,0,0,.55);
+            transition: .4s cubic-bezier(.3,1.5,.5,1);
+        }
+
+            .toast.visible {
+                transform: translate(-50%, 0);
+                opacity: 1;
+            }
+
+            .toast i {
+                color: var(--ok);
+            }
+
+        a:focus-visible, button:focus-visible {
+            outline: 2px solid #fff;
+            outline-offset: 3px;
+        }
+
+        @media (max-width: 960px) {
+            .rejilla {
+                grid-template-columns: 1fr;
+            }
+
+            .mapa-card {
+                min-height: 420px;
+            }
+        }
+
+        @media (max-width: 860px) {
+            .navbar {
+                padding: 0 16px;
+            }
+
+            .nav-toggle {
+                display: block;
+            }
+
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 75px;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                gap: 4px;
+                padding: 12px 16px 16px;
+                background: rgba(16,0,43,.97);
+                border-bottom: 1px solid var(--card-border);
+                max-height: calc(100vh - 75px);
+                overflow-y: auto;
+            }
+
+                .nav-menu.abierto {
+                    display: flex;
+                }
+
+            .dropdown {
+                display: block;
+            }
+
+            .dropdown-content {
+                display: block !important;
+                position: static;
+                box-shadow: none;
+                border: 0;
+                background: transparent;
+                padding: 0 0 0 14px !important;
+            }
+        }
+
+        @media (max-width: 440px) {
+            .fila {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 1.55rem;
+            }
+
+            .conmutador button span {
+                display: none;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation: none !important;
+                transition: none !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="orb a"></div>
+    <div class="orb b"></div>
+    <div class="huellas">
+        <i class="fa-solid fa-paw"></i><i class="fa-solid fa-paw"></i><i class="fa-solid fa-paw"></i>
+        <i class="fa-solid fa-paw"></i><i class="fa-solid fa-paw"></i><i class="fa-solid fa-paw"></i>
+    </div>
+    <nav class="navbar">
+        <a href="index.html" class="brand-logo"><i class="fa-solid fa-cat"></i> ADOPTA AMOR</a>
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menú"><i class="fa-solid fa-bars"></i></button>
+        <ul class="nav-menu" id="navMenu">
+            <li class="nav-item"><a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+            <li class="nav-item"><a href="gatos.html"><i class="fa-solid fa-paw"></i> Catálogo</a></li>
+            <li class="nav-item"><a href="adopcion.html"><i class="fa-solid fa-heart"></i> Adopciones</a></li>
+            <li class="nav-item"><a href="ubicacion.html" class="active"><i class="fa-solid fa-location-dot"></i> Ubicación</a></li>
+            <li class="nav-item dropdown">
+                <a href="#" class="dropbtn"><i class="fa-solid fa-gear"></i> Gestión <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 4px;"></i></a>
+                <ul class="dropdown-content">
+                    <li><a href="gestion-gatos.html"><i class="fa-solid fa-cat"></i> Gestión Gatos</a></li>
+                    <li><a href="gestion-usuarios.html"><i class="fa-solid fa-users"></i> Gestión Usuarios</a></li>
+                    <li><a href="gestion-solicitudes.html"><i class="fa-solid fa-file-lines"></i> Gestión Solicitudes</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="dropbtn"><i class="fa-solid fa-user"></i> Mi Perfil <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 4px;"></i></a>
+                <ul class="dropdown-content">
+                    <li><a href="perfil.html"><i class="fa-solid fa-id-card"></i> Perfil</a></li>
+                    <li><a href="Login.html"><i class="fa-solid fa-right-to-bracket"></i> Login</a></li>
+                    <li><a href="Registro.html"><i class="fa-solid fa-user-plus"></i> Registro</a></li>
+                    <li><a href="Login.html"><i class="fa-solid fa-right-from-bracket"></i> Salir</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="acercade.html"><i class="fa-solid fa-circle-question"></i> Ayuda</a></li>
+        </ul>
+    </nav>
+
+    <div class="contenedor">
+        <header class="encabezado">
+            <div class="avatar"><i class="fa-solid fa-location-dot"></i></div>
+            <h1>Nuestra ubicación</h1>
+            <p class="lema">ADOPTA AMOR</p>
+            <p class="sub">Visítanos, conoce a los gatitos y encuentra a tu nuevo compañero.</p>
+        </header>
+
+        <div class="rejilla">
+            <div class="tarjeta-wrap">
+                <aside class="tarjeta">
+                    <h2>Centro de Rescate Mishi</h2>
+                    <p class="tipo"><span class="dot"></span> Punto de adopción autorizado</p>
+
+                    <div class="dato">
+                        <div class="ico"><i class="fa-solid fa-location-dot"></i></div>
+                        <div><strong>Dirección</strong><span>Colonia El Cocal, Pasaje Ramírez<br>Usulután, El Salvador</span></div>
+                    </div>
+                    <div class="dato">
+                        <div class="ico"><i class="fa-solid fa-clock"></i></div>
+                        <div><strong>Horario de atención</strong><span>Lunes a viernes: 8:00 a.m. – 5:00 p.m.<br>Sábado: 8:00 a.m. – 12:00 m.</span></div>
+                    </div>
+                    <div class="dato">
+                        <div class="ico"><i class="fa-solid fa-signs-post"></i></div>
+                        <div><strong>Cómo llegar</strong><span>Zona urbana de Usulután, a unas cuadras del Asilo de Ancianos San Vicente de Paúl.</span></div>
+                    </div>
+                    <div class="dato">
+                        <div class="ico"><i class="fa-solid fa-paw"></i></div>
+                        <div><strong>Antes de visitarnos</strong><span>Pregunta por el gatito que te interesó en el catálogo para tenerlo listo.</span></div>
+                    </div>
+
+                    <div class="acciones">
+                        <a class="btn" id="btnRuta" href="#" target="_blank" rel="noopener"><i class="fa-solid fa-diamond-turn-right"></i> Cómo llegar</a>
+                        <div class="fila">
+                            <button type="button" class="btn-sec" id="btnCopiar"><i class="fa-solid fa-copy"></i> Copiar dirección</button>
+                            <a class="btn-sec" id="btnWhats" href="#" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Compartir</a>
+                        </div>
+                        <a class="btn-sec" id="btnAbrir" href="#" target="_blank" rel="noopener"><i class="fa-solid fa-up-right-from-square"></i> Abrir en Google Maps</a>
+                    </div>
+                </aside>
+            </div>
+            <section class="mapa-card">
+                <div class="conmutador" role="tablist" aria-label="Tipo de mapa">
+                    <button type="button" class="activo" id="vMapa" role="tab"><i class="fa-solid fa-map"></i><span>Mapa</span></button>
+                    <button type="button" id="vSatelite" role="tab"><i class="fa-solid fa-satellite"></i><span>Satélite</span></button>
+                </div>
+                <div class="cargando-mapa" id="cargandoMapa"><div><i class="fa-solid fa-location-dot"></i>Cargando mapa...</div></div>
+                <iframe id="mapa" title="Mapa de ubicación del Centro de Rescate Mishi" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+            </section>
+        </div>
+    </div>
+
+    <div class="toast" id="toast"><i class="fa-solid fa-circle-check"></i><span id="toastTxt"></span></div>
+
+    <script>
+        // @ts-nocheck
+        window.addEventListener('load', function () {
+            var LAT = 13.340633;
+            var LNG = -88.4445747;
+            var NOMBRE = 'Centro de Rescate Mishi';
+            var DIRECCION = 'Colonia El Cocal, Pasaje Ramírez, Usulután, El Salvador';
+            var ENLACE = 'https://maps.app.goo.gl/BqaT3JRm6bSx7mL86';
+
+            var mapa = document.getElementById('mapa');
+            var cargando = document.getElementById('cargandoMapa');
+            var vMapa = document.getElementById('vMapa');
+            var vSatelite = document.getElementById('vSatelite');
+            var timerToast = null;
+
+            document.getElementById('navToggle').addEventListener('click', function () {
+                document.getElementById('navMenu').classList.toggle('abierto');
+            });
+            function urlMapa(satelite) {
+                return 'https://maps.google.com/maps?q=' + LAT + ',' + LNG +
+                    '(' + encodeURIComponent(NOMBRE) + ')&z=17&hl=es&output=embed' + (satelite ? '&t=k' : '');
+            }
+
+            function cargarMapa(satelite) {
+                cargando.classList.remove('oculto');
+                mapa.classList.remove('listo');
+                mapa.src = urlMapa(satelite);
+                vMapa.classList.toggle('activo', !satelite);
+                vSatelite.classList.toggle('activo', satelite);
+            }
+
+            mapa.addEventListener('load', function () {
+                mapa.classList.add('listo');
+                cargando.classList.add('oculto');
+            });
+
+            vMapa.addEventListener('click', function () { cargarMapa(false); });
+            vSatelite.addEventListener('click', function () { cargarMapa(true); });
+            cargarMapa(false);
+
+            document.getElementById('btnRuta').href =
+                'https://www.google.com/maps/dir/?api=1&destination=' + LAT + ',' + LNG + '&travelmode=driving';
+            document.getElementById('btnAbrir').href = ENLACE;
+            document.getElementById('btnWhats').href =
+                'https://wa.me/?text=' + encodeURIComponent(NOMBRE + '\n' + DIRECCION + '\n' + ENLACE);
+            function avisar(texto) {
+                var t = document.getElementById('toast');
+                document.getElementById('toastTxt').textContent = texto;
+                t.classList.add('visible');
+                clearTimeout(timerToast);
+                timerToast = setTimeout(function () { t.classList.remove('visible'); }, 2400);
+            }
+            function copiarFallback(texto) {
+                var ta = document.createElement('textarea');
+                ta.value = texto;
+                ta.style.position = 'fixed';
+                ta.style.opacity = '0';
+                document.body.appendChild(ta);
+                ta.select();
+                var ok = false;
+                try { ok = document.execCommand('copy'); } catch (e) { }
+                document.body.removeChild(ta);
+                return ok;
+            }
+
+            document.getElementById('btnCopiar').addEventListener('click', function () {
+                var texto = NOMBRE + ', ' + DIRECCION;
+                if (navigator.clipboard && window.isSecureContext) {
+                    navigator.clipboard.writeText(texto)
+                        .then(function () { avisar('Dirección copiada'); })
+                        .catch(function () { avisar(copiarFallback(texto) ? 'Dirección copiada' : 'No se pudo copiar'); });
+                } else {
+                    avisar(copiarFallback(texto) ? 'Dirección copiada' : 'No se pudo copiar');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

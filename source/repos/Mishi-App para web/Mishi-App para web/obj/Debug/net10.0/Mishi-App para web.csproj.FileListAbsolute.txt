@@ -1,0 +1,190 @@
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\appsettings.Development.json
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\appsettings.json
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\Mishi-App para web.staticwebassets.runtime.json
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\Mishi-App para web.staticwebassets.endpoints.json
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\Mishi-App para web.exe
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\Mishi-App para web.deps.json
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\Mishi-App para web.runtimeconfig.json
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\Mishi-App para web.runtimeconfig.dev.json
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\Mishi-App para web.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\Mishi-App para web.pdb
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\Humanizer.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\Microsoft.Bcl.Cryptography.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\Microsoft.Build.Framework.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\Microsoft.CodeAnalysis.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\Microsoft.Data.SqlClient.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\Microsoft.Data.SqlClient.Extensions.Abstractions.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\Microsoft.Data.SqlClient.Internal.Logging.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\Microsoft.OpenApi.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\Microsoft.SqlServer.Server.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\Microsoft.VisualStudio.SolutionPersistence.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\Mono.TextTemplating.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\Newtonsoft.Json.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\System.CodeDom.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\System.Composition.AttributedModel.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\System.Composition.Convention.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\System.Composition.Hosting.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\System.Composition.Runtime.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\System.Composition.TypedParts.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\System.Configuration.ConfigurationManager.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\cs\Microsoft.Data.SqlClient.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\pl\Microsoft.Data.SqlClient.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\tr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\runtimes\unix\lib\net9.0\Microsoft.Data.SqlClient.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\runtimes\win\lib\net9.0\Microsoft.Data.SqlClient.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\bin\Debug\net10.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\Mishi-App para web.csproj.AssemblyReference.cache
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\dotnet-watch\Microsoft.NET.Sdk.BlazorWeb.DotNetWatch.lib.module.js
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\dotnet-watch\Microsoft.NET.Sdk.BlazorWeb.DotNetWatch.BrowserTools.js
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\dotnet-watch\Microsoft.NET.Sdk.BlazorWeb.DotNetWatch.BrowserTools.Config.js
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\dotnet-watch\browser-tools-key.public.json
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\dotnet-watch\browser-tools-key.private.json
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\Mishi-App para web.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\Mishi-App para web.AssemblyInfoInputs.cache
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\Mishi-App para web.AssemblyInfo.cs
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\Mishi-App para web.csproj.CoreCompileInputs.cache
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\Mishi-App para web.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\Mishi-App para web.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\rjimswa.dswa.cache.json
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\jsmodules\jsmodules.build.manifest.json
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\scopedcss\scopedcss.cache
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\scopedcss\bundle\Mishi-App para web.styles.css
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\compressed\a1mocciq4z-{0}-hbxp78vwan-hbxp78vwan.gz
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\compressed\x71tn0jq5w-{0}-2vps2b417n-2vps2b417n.gz
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\compressed\eyouuf07xx-{0}-xtn260hwt0-xtn260hwt0.gz
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\compressed\c30rqxv4bw-{0}-9x2xy8yhbl-9x2xy8yhbl.gz
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\compressed\ga49z1qfps-{0}-c2uhwqklaf-c2uhwqklaf.gz
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\compressed\mide3nic4g-{0}-use0osta4u-use0osta4u.gz
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\compressed\va9rp6fv0s-{0}-031s2d8yp0-031s2d8yp0.gz
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\compressed\33tf2ddq5d-{0}-j8649nscz4-j8649nscz4.gz
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\compressed\xv78pgii83-{0}-mmywc2gylp-mmywc2gylp.gz
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\compressed\gybezw0646-{0}-nqt2alyxqi-nqt2alyxqi.gz
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\compressed\pwdxuosqcg-{0}-rw9knqffw6-rw9knqffw6.gz
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\compressed\65kskme75n-{0}-naouhr7w4d-naouhr7w4d.gz
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\compressed\pubzhxee67-{0}-s459ojxr9b-s459ojxr9b.gz
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\compressed\3lggchbc1s-{0}-2c148fskzk-2c148fskzk.gz
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\compressed\ekjeqe5nau-{0}-6z51os36h9-6z51os36h9.gz
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\compressed\rh8lqivfbz-{0}-bwijbog0h0-bwijbog0h0.gz
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\compressed\222u9q9o9k-{0}-eozo010atg-eozo010atg.gz
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\compressed\qxs50ru92y-{0}-t07awkt7r5-t07awkt7r5.gz
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\compressed\8chag3wzkt-{0}-l5i1o85zbk-l5i1o85zbk.gz
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\compressed\ipcsuah0gh-{0}-nh1im7ot9s-nh1im7ot9s.gz
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\compressed\bekuhjy8b4-{0}-0jzgximaur-0jzgximaur.gz
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\compressed\z3rismzx2k-{0}-jg1zeloavq-jg1zeloavq.gz
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\compressed\1kqzlx7r9c-{0}-52mn6jml51-52mn6jml51.gz
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\compressed\73x2mjsn7b-{0}-89q0vcmhzz-89q0vcmhzz.gz
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\compressed\ob50is3h7v-{0}-f6x2qk3lxe-f6x2qk3lxe.gz
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\compressed\b8te5y92i9-{0}-pmpabpnd9a-pmpabpnd9a.gz
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\compressed\8coun43wv9-{0}-o299wl1apk-o299wl1apk.gz
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\staticwebassets.build.json
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\staticwebassets.build.json.cache
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\staticwebassets.development.json
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\swae.build.ex.cache
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\Mishi-Ap.8475D693.Up2Date
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\Mishi-App para web.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\refint\Mishi-App para web.dll
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\Mishi-App para web.pdb
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\Mishi-App para web.genruntimeconfig.cache
+C:\Users\rexon\source\repos\Mishi-App para web\Mishi-App para web\obj\Debug\net10.0\ref\Mishi-App para web.dll
