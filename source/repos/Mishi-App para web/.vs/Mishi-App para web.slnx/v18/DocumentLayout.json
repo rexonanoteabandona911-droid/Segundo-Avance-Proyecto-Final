@@ -56,7 +56,7 @@
               "RelativeDocumentMoniker": "Mishi-App para web\\wwwroot\\Acercade.html",
               "ToolTip": "C:\\Users\\rexon\\source\\repos\\Mishi-App para web\\Mishi-App para web\\wwwroot\\Acercade.html",
               "RelativeToolTip": "Mishi-App para web\\wwwroot\\Acercade.html",
-              "ViewState": "AgIAALwCAAAAAAAAAAAowMgCAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAANYCAAAAAAAAAAAAAAADAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2026-10-25T23:37:49.52Z",
               "EditorCaption": ""
@@ -71,8 +71,7 @@
               "RelativeToolTip": "Mishi-App para web\\Models\\Adopcion.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-25T22:29:59.642Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-25T22:29:59.642Z"
             },
             {
               "$type": "Document",
@@ -84,8 +83,7 @@
               "RelativeToolTip": "Mishi-App para web\\Data\\AppDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-25T22:14:34.902Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-25T22:14:34.902Z"
             },
             {
               "$type": "Document",
@@ -97,8 +95,7 @@
               "RelativeToolTip": "Mishi-App para web\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-10-25T22:14:28.292Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-25T22:14:28.292Z"
             },
             {
               "$type": "Document",
@@ -110,8 +107,7 @@
               "RelativeToolTip": "Mishi-App para web\\wwwroot\\perfil.html",
               "ViewState": "AgIAACsDAAAAAAAAAAAAAP4CAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-10-25T22:08:30.944Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-25T22:08:30.944Z"
             },
             {
               "$type": "Document",
@@ -123,8 +119,7 @@
               "RelativeToolTip": "Mishi-App para web\\wwwroot\\perfil.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-10-25T22:08:29.911Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-25T22:08:29.911Z"
             },
             {
               "$type": "Document",
@@ -136,8 +131,7 @@
               "RelativeToolTip": "Mishi-App para web\\wwwroot\\adopcion.html",
               "ViewState": "AgIAALwDAAAAAAAAAAAswMMDAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-10-25T22:08:27.056Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-25T22:08:27.056Z"
             },
             {
               "$type": "Document",
@@ -149,8 +143,7 @@
               "RelativeToolTip": "Mishi-App para web\\wwwroot\\adopcion.js",
               "ViewState": "AgIAALgAAAAAAAAAAAAQwOYAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-10-25T22:08:25.992Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-25T22:08:25.992Z"
             },
             {
               "$type": "Document",
@@ -162,8 +155,7 @@
               "RelativeToolTip": "Mishi-App para web\\Controllers\\AdopcionesController.cs",
               "ViewState": "AgIAAIsAAAAAAAAAAAAswLoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-25T21:16:05.153Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-25T21:16:05.153Z"
             }
           ]
         }
